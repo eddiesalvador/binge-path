@@ -1,7 +1,7 @@
-package node
+package main
 
 import (
-	"fmt"
+	_"fmt"
 )
 
 type Node struct {

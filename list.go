@@ -1,8 +1,8 @@
-package list
+package main
 
 import (
 	"fmt"
-	"node"
+	
 )
 
 type List struct {
