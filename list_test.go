@@ -1,11 +1,10 @@
-package tests
+package main
 
 import (
 	"fmt"
-	"binge-path/main"
 )
 
-func test() {
+func List_test() {
 	link := List{}
 	link.Insert("Sam")
 	link.Insert(9)

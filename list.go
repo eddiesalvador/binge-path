@@ -2,14 +2,12 @@ package main
 
 import (
 	"fmt"
-	
 )
 
 type List struct {
 	head *Node
 	tail *Node
 }
-
 
 func (L *List) Insert(key interface{}) {
 	list := &Node{
@@ -67,6 +65,3 @@ func (l *List) Reverse() {
 	l.head = prev
 	Display(l.head)
 }
-
-
-

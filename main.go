@@ -2,11 +2,29 @@ package main
   
 import (
 	"fmt"
-	test "github.com/eddiesalvador/binge-path/tests"
+	"bufio"
+	"os"
 )
 
 // Main function
 func main() {
-    fmt.Println("Welcome to the Binge-Path!")
-	test()
+	fmt.Println("\n============================")
+	fmt.Println("|Welcome to the Binge-Path!|")
+	fmt.Println("============================\n")
+	fmt.Print("Please enter the first title: ")
+	
+	// var binge_list *List
+
+	reader := bufio.NewReader(os.Stdin)
+	input, err := reader.ReadString('\n')
+	
+	if (err != nil) {
+		fmt.Println(err)
+	}
+
+	fmt.Println("The input is: " + input)
+
+
 }
+
+
