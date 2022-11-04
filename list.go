@@ -29,7 +29,7 @@ func (L *List) Insert(key interface{}) {
 func (l *List) Display() {
 	list := l.head
 	for list != nil {
-		fmt.Printf("%+v ->", list.key)
+		fmt.Printf("%+v -> ", list.key)
 		list = list.next
 	}
 	fmt.Println()
